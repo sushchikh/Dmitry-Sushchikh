@@ -66,6 +66,13 @@ html, body {
 
 }
 
+
+.main_container{
+	width: 100vw;
+	height: 100vh;
+}
+
+
 /* 
 ##     ## ########    ###    ########  ######## ########
 ##     ## ##         ## ##   ##     ## ##       ##     ##
@@ -101,6 +108,7 @@ html, body {
 	display: inline-block;
 	float: right;
 	text-align: right;
+	min-width: 100px;
 
 
   }
@@ -115,18 +123,53 @@ html, body {
 
 
 
- /* 
- ########  #######  ########           ######   ########           ######   #######  ##    ## ########
-    ##    ##     ## ##     ##         ##    ##  ##     ##         ##    ## ##     ## ###   ##    ##
-    ##    ##     ## ##     ##         ##        ##     ##         ##       ##     ## ####  ##    ##
-    ##    ##     ## ########          ##   #### ########          ##       ##     ## ## ## ##    ##
-    ##    ##     ## ##                ##    ##  ##   ##           ##       ##     ## ##  ####    ##
-    ##    ##     ## ##                ##    ##  ##    ##          ##    ## ##     ## ##   ###    ##
-    ##     #######  ##        #######  ######   ##     ## #######  ######   #######  ##    ##    ##
-   */
+/* 
+ ######   #######  ##    ## ######## ######## ##    ## ########          ######   #######  ##    ## ########    ###    #### ##    ## ######## ########
+##    ## ##     ## ###   ##    ##    ##       ###   ##    ##            ##    ## ##     ## ###   ##    ##      ## ##    ##  ###   ## ##       ##     ##
+##       ##     ## ####  ##    ##    ##       ####  ##    ##            ##       ##     ## ####  ##    ##     ##   ##   ##  ####  ## ##       ##     ##
+##       ##     ## ## ## ##    ##    ######   ## ## ##    ##            ##       ##     ## ## ## ##    ##    ##     ##  ##  ## ## ## ######   ########
+##       ##     ## ##  ####    ##    ##       ##  ####    ##            ##       ##     ## ##  ####    ##    #########  ##  ##  #### ##       ##   ##
+##    ## ##     ## ##   ###    ##    ##       ##   ###    ##            ##    ## ##     ## ##   ###    ##    ##     ##  ##  ##   ### ##       ##    ##
+ ######   #######  ##    ##    ##    ######## ##    ##    ##    #######  ######   #######  ##    ##    ##    ##     ## #### ##    ## ######## ##     ##
+ */
+
+.content_container{
+	position: relative;
+}
 
    .top_gradient_container{
-   	height: 10vh;
+   	height: 12vh;
    	width: 100vw;
-   	background: linear-gradient(178.5deg, #0C1E36 49%, transparent 50%), linear-gradient(178.5deg, transparent 50%, #FF3330 49%, );
+   	background: linear-gradient(178deg, #0C1E36 48%, #FF3330 49%, #FF3330 57%, transparent 58%);
+   	position: absolute;
+   	z-index: 1999;
    }
+
+   .content_backgrounf_container{
+   	width: 100vw;
+   	height: calc(90vh - 3px);
+   	background-image: url('http://lorempixel.com/1000/1000');
+   	background-repeat: no-repeat;
+   	background-size: cover;
+   	background-position: center center;
+   	position: absolute;
+   }
+
+   .side_container{
+   	height: calc(90vh - 3px);
+   	width: 45vw;
+   	background-color: rgba(255, 255, 255, .4);
+   	position: absolute;
+   	text-transform: uppercase;
+   }
+
+    .side_container p{
+		font-size: 2.7rem;
+		margin-top: 30vh;
+		display: block;
+		width: 30vw;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: 900;
+    }
