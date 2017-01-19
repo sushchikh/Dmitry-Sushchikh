@@ -59,7 +59,7 @@ html{
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=cyrillic');
 
 html, body {
   font-family: "open sans", sans-serif, verdana;
@@ -88,7 +88,7 @@ html, body {
   height: 10vh;
   background-color: #0C1E36;
   line-height: 10vh;
-  padding-right: 19vw;
+  padding-right: 12vw;
   color: #fff;
   margin-bottom: 3px;
 }
@@ -97,7 +97,7 @@ html, body {
 	width: 50vw;
 	height: 100%;
 
-	padding-left: 17vw;
+	padding-left: 10vw;
 	display: inline-block;
 	float: left;
   }
@@ -140,7 +140,7 @@ html, body {
    .top_gradient_container{
    	height: 12vh;
    	width: 100vw;
-   	background: linear-gradient(178deg, #0C1E36 48%, #FF3330 49%, #FF3330 57%, transparent 58%);
+   	background: linear-gradient(178deg, #0C1E36 48%, #FF3330 49%, #FF3330 57%, rgba(255, 51, 48, .0) 58%);
    	position: absolute;
    	z-index: 1999;
    }
@@ -148,7 +148,7 @@ html, body {
    .content_backgrounf_container{
    	width: 100vw;
    	height: calc(90vh - 3px);
-   	background-image: url('http://lorempixel.com/1000/1000');
+   	background-image: url('../img/main/background.jpg');
    	background-repeat: no-repeat;
    	background-size: cover;
    	background-position: center center;
@@ -169,7 +169,52 @@ html, body {
 		display: block;
 		width: 30vw;
 		text-align: left;
-		margin-left: auto;
+		margin-left: 10vw;
 		margin-right: auto;
 		font-weight: 900;
     }
+
+/* 
+ ######   #######  ##    ## ########    ###     ######  ########  ######
+##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##    ##    ##
+##       ##     ## ####  ##    ##     ##   ##  ##          ##    ##
+##       ##     ## ## ## ##    ##    ##     ## ##          ##     ######
+##       ##     ## ##  ####    ##    ######### ##          ##          ##
+##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##    ##    ##
+ ######   #######  ##    ##    ##    ##     ##  ######     ##     ######     
+*/
+
+.contacts_container{
+	width: 100vw;
+	height: 15vh;
+	bottom: 0;
+	margin-bottom: 2vh;
+	background: linear-gradient(357.5deg, rgba(12, 30, 54, .7) 58%, rgba(12, 30, 54, .0) 59%);
+	position: absolute;
+	padding-right: 12vw;
+}
+	.adress, .phone, .e-mail{
+		display: inline-block;
+		height: 5vh;
+		line-height: 5vh;
+		margin-top: 10vh;
+		color: #fff;
+	}
+
+	.adress{
+		margin-left: 10vw;
+	}
+	.phone, .e-mail{
+		float: right;
+		margin-left: 5vw;
+
+	}
+
+.footer_bar	{
+	width: 100vw;
+	height: 2vh;
+	position: absolute;
+	bottom: 0;
+	background-color: #FF3330;
+
+}
