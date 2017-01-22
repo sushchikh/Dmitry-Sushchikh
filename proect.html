@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Дмитрий Сущих — Dmitry Sushchikh</title>
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/my2.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&amp;subset=cyrillic" rel="stylesheet">
+
+  </head>
+
+	<body>
+<div class="main_container">
+		<div class="header header_mini">
+			<div class="nav">
+				<div class="main"><a href="index.html">главная</a></div>
+				<div class="projekts active"><a href="proect.html">проекты</a></div>
+				<div class="contacts"><a href="contacts.html">контакты</a></div>
+			</div>
+			<div class="title title_mini">sushchikh <nobr>dmitry & co</nobr></div>
+		</div>
+
+	
+<div class="proect_container">
+
+		<div class="proect_title">Умный дом<br>управление обогревом, климат, IOT</div>
+
+		<div class="proect_wrapper">
+			<div class="proect_article">
+			<h1>задача</h1>
+			<p>С помощью мобильного телефона стандарта gsm включать радиаторы на даче в момент выезда из квартиры, чтобы к приезду дом был теплый.</p>
+
+			<h1>решение</h1>
+			<p>Радиаторы питаются от розеток 220 вольт переменного тока 50-60 герц. В разрыв цепи между розеткой и радиатором устанавливается группа из wi-fi контроллера esp8266, питающегося через трансформатор 220В/5В AC-DC, собирающего данные через датчик температуры BMP180/SHT21/DS18B20 и управляющего подачей питания через твердотельное реле OMRON G3NA. Группы обмениваются данными с главным контроллером raspberry pi, с модулем SIM800, снабженным резервной АКБ.</p></div>
+			<div class="proect_img"><img src="img/proect/scheme.png" alt=""></div>
+		</div>
+
+</div>
+
+
+
+</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/my.js"></script>
+
+	</body>
+
+</html>
